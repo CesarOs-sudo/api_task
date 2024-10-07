@@ -15,4 +15,12 @@ class Task extends Model
         'status',
         'available'
     ];
+
+
+    /**
+     * Relacion uno a muchos inversa
+     */
+    public function user(){
+        return $this->belongsToMany(User::class);
+    }
 }
