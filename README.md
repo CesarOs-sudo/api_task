@@ -10,9 +10,9 @@
 
 ## API en Laravel
 
-Este es un proyecto de un crud basico de tareas con atenticacion JWT para usuarios solicitado por DQ
+Este es un proyecto de un crud básico de tareas con atenticacion JWT para usuarios solicitado por DQ
 
-## Instalacion del proyecto
+## Instalación del proyecto
 - Clonar el proyecto en la carpeta principal de tu servidor local
 - Crear una base de datos en tu local llamada api_task
 - Entrar a la carpeta del proyecto clonado
@@ -27,7 +27,7 @@ Este es un proyecto de un crud basico de tareas con atenticacion JWT para usuari
 
 ## Ejecutar en local
 El API se puede probar con ThunderClient o Postman 
-- Ejecutamos el comando "php artisan serve" para que nuestra aplicacion inicie, el resultado de ese comando nos dara nuestro localhos y el puerto donde se ejecuta el API
+- Ejecutamos el comando "php artisan serve" para que nuestra aplicación inicie, el resultado de ese comando nos dara nuestro localhos y el puerto donde se ejecuta el API
 - Crear un nuevo request en thunder client de tipo post con la ruta deseada ya sea para hacer login o logout
 - Ruta para autenticar el usuario "/api/auth/login"
 - Ruta para terminar la autenticacion "/api/auth/logout"
