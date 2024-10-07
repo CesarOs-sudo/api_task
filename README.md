@@ -7,18 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
 ## API en Laravel
-Este es un pequeño un pequeño ejemplo de un crud basico de tareas Solicitado por DQ
+Este es un pequeño ejemplo de un crud basico de tareas con atenticacion JWT Solicitado por DQ
 
 ## Instalacion del proyecto
-
-Una vez clonado el proyecto se tiene que renombrar el archivo.env.example por .env
-Despues de haberlo renombrado se tienen que definir las credeciales de la conexion a la base de datos 
-NOTA: Se tiene que tener una base de datos creada y limpia
+- Clonar el proyecto en la carpeta principal de tu servidor local
+- Crear una base de datos en tu local llamada api_task
+- Una vez clonado el proyecto se tiene que renombrar el archivo.env.example por .env
+- Entrar al archivo .env y llenar los datos de la conexión a base de datos como usuario, password, host y colocar el nombre de la base de datos api_task
+- Ejecutar las migraciones con el comando "php artisan migrate"
+- Ejecutar los seeders con el comando "php artisan db:seed"
 
 
 ## Laravel Sponsors
