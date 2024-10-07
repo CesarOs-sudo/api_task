@@ -9,49 +9,34 @@
 
 
 ## API en Laravel
-Este es un pequeño ejemplo de un crud basico de tareas con atenticacion JWT Solicitado por DQ
+
+Este es un proyecto de un crud basico de tareas con atenticacion JWT para usuarios solicitado por DQ
 
 ## Instalacion del proyecto
 - Clonar el proyecto en la carpeta principal de tu servidor local
 - Crear una base de datos en tu local llamada api_task
-- Una vez clonado el proyecto se tiene que renombrar el archivo.env.example por .env
+- Entrar a la carpeta del proyecto clonado
+- Una vez clonado el proyecto se tiene que renombrar el archivo .env.example por .env
 - Entrar al archivo .env y llenar los datos de la conexión a base de datos como usuario, password, host y colocar el nombre de la base de datos api_task
+- Instalar las dependencias con el comando "composer install"
 - Ejecutar las migraciones con el comando "php artisan migrate"
 - Ejecutar los seeders con el comando "php artisan db:seed"
+- Ejecutar "php artisan jwt:secret" para obtener la clave secreta
+- Asta este punto el API ya se encontrara con datos y lista para usarse
 
 
-## Laravel Sponsors
+## Ejecutar en local
+El API se puede probar con ThunderClient o Postman 
+- Ejecutamos el comando "php artisan serve" para que nuestra aplicacion inicie, el resultado de ese comando nos dara nuestro localhos y el puerto donde se ejecuta el API
+- Crear un nuevo request en thunder client de tipo post con la ruta deseada ya sea para hacer login o logout
+- Ruta para autenticar el usuario "/api/auth/login"
+- Ruta para terminar la autenticacion "/api/auth/logout"
+- 
+Las rutas para hacer crud en Tareas son 
+- /api/task/gelAll  
+- /api/task/create
+- /api/task/update/param
+- /api/task/delete/param
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
